@@ -6,12 +6,12 @@ Executing a password recovery and factory reset on a Cisco ASA 5505 firewall.
 <br />
 
 <h2>Purpose</h2>
-
-<b>The purpose of this lab was to familiarize ourselves with the basics of the ASA 5505 firewall by learning how and later implementing a factory reset and password recovery on the firewall to create a clean slate for us to begin our work on the firewalls.</b>
+The purpose of this lab was to familiarize ourselves with the basics of the ASA 5505 firewall by learning how and later implementing a factory reset and password recovery on the firewall to create a clean slate for us to begin our work on the firewalls.
+<br />
 
 <h2>Background Info</h2>
-
-<b>The ASA 5505 is a network firewall which was created in 2005, in its prime it was a pretty widely used firewall and still is used in a lot of places but it is nearing its end of life. This firewall focuses on its VPN functionality alongside its Intrusion Prevention and VoIP capabilities.</b>
+The ASA 5505 is a network firewall which was created in 2005, in its prime it was a pretty widely used firewall and still is used in a lot of places but it is nearing its end of life. This firewall focuses on its VPN functionality alongside its Intrusion Prevention and VoIP capabilities.
+<br />
 
 
 
