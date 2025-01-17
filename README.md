@@ -1,60 +1,60 @@
-<h1>ASA Factory Reset</h1>
+<h1>Palo Alto Firewall Factory Reset</h1>
 
 
 <h2>TLDR Description</h2>
-Executing a password recovery and factory reset on a Cisco ASA 5505 firewall. 
+Factory reset of a Palo Alto 220 Firewall  
 <br />
 
 <h2>Purpose</h2>
-The purpose of this lab was to familiarize ourselves with the basics of the ASA 5505 firewall by learning how and later implementing a factory reset and password recovery on the firewall to create a clean slate for us to begin our work on the firewalls.
+The purpose of this lab is to factory reset a Palo Alto 220 Firewall to begin the upcoming configuration labs with a clean slate, this could translate to the professional world in the context of implementation of second hand equipment or a wipe of out of favor equipment.
 <br />
 
 <h2>Background Info</h2>
-The ASA 5505 is a network firewall which was created in 2005, in its prime it was a pretty widely used firewall and still is used in a lot of places but it is nearing its end of life. This firewall focuses on its VPN functionality alongside its Intrusion Prevention and VoIP capabilities.
+The firewall we are working on in this lab, the Palo Alto 220 Firewall, was released in 2017 and was widely respected throughout the tech industry but as of recently it has slowly faded giving room to newer, improved firewalls.
 <br />
 
+<h2>Lab Summary</h2>
+To start this lab I jumped into research as I had no experience with Palo Alto products prior to this. After gaining a good understanding of the process of how to factory reset this device I connected my pc to the firewall with a console cable and plugged in a power cable into the firewall to then boot it. As it was booting it prompted to enter maintenance mode by using the command “maint” which I did. After letting it load into maintenance mode I selected the factory reset option and the factory reset process began. I then let the factory reset process load until it was finished, once it was finished it prompted me asking if I wanted to reboot with the factory reset configuration which I did. Once it booted up, the factory reset process was complete and I was ready to move on to new labs with a clean configuration on the Palo Alto Firewall.
+<br />
 
+<h2>Lab Commands</h2>
+-maint – boots the palo alto system into maintenance mode to begin the factory reset process.
+<br />
 
+<h2>Network Diagram</h2>
+<p align="center">
+  <img src="https://i.imgur.com/JG4RBcT.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
 
-<h2>Languages and Utilities Used</h2>
-
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
-
-<h2>Environments Used </h2>
-
-- <b>Windows 10</b> (21H2)
-
-<h2>Program walk-through:</h2>
+<h2>Walk-Through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+On boot use maint command to enter maintanence mode when prompted<br/>
+<img src="https://i.imgur.com/g8H867f.png" height="80%" width="80%" alt="Palo Alto Firewall Factory Reset Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Once in maintanence mode select factory reset and enter to confirm<br/>
+<img src="https://i.imgur.com/LCO9zVH.png" height="80%" width="80%" alt="Palo Alto Firewall Factory Reset Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Wait for factory reset to complete<br/>
+<img src="https://i.imgur.com/CxOLYm9.png" height="80%" width="80%" alt="Palo Alto Firewall Factory Reset Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Once the factory reset is complete with a successful status, reboot<br/>
+<img src="https://i.imgur.com/t8Ha1we.png" height="80%" width="80%" alt="Palo Alto Firewall Factory Reset Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Now it boots in the default environment <br/>
+<img src="https://i.imgur.com/3cat6dH.png" height="80%" width="80%" alt="Palo Alto Firewall Factory Reset Steps"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+<h2>Conclusion</h2>
+In this lab I factory reset a Palo Alto 220 Firewall after conducting research to find information on how to do so seeing as I had no prior knowledge on how to perform the objective. I had very little issues completing this lab as it’s main purpose was to simply set up for future labs. It also got me comfortable with using the Palo Alto’s console which I used to initiate the factory reset process. After this lab was completed the firewall was wiped of prior configuration and ready for me to start my own configuration.
+<br />
 
 <!--
  ```diff
