@@ -29,18 +29,44 @@ With a quick google search we were able to find the commands necessary to execut
 </p>
 <br />
 
+<h2>Configuration</h2>
+rommon #1> confreg 0x41
+<br />
+rommon #1> confreg
+<br />
+rommon #2> boot
+<br />
+ciscoasa> enable
+<br />
+ciscoasa# copy startup-config running-config
+<br />
+ciscoasa# configure terminal
+<br />
+ciscoasa(config)# password password
+<br />
+ciscoasa(config)# enable password password
+<br />
+ciscoasa(config)# username cisco password password
+<br />
+ciscoasa(config)# no config-register
+<br />
+ciscoasa(config)# copy running-config startup-config
+<br />
+ciscoasa(config)# config factory-default
+<br />
+
 <h2>Walk-Through:</h2>
 
 <p align="center">
-1<br/>
+While booting, enter configuration mode<br/>
 <img src="https://i.imgur.com/XRVO4Ow.png" height="80%" width="80%" alt="Palo Alto Firewall Factory Reset Steps"/>
 <br />
 <br />
-2<br/>
+Change current configuration to a clean slate<br/>
 <img src="https://i.imgur.com/Lk3iENN.png" height="80%" width="80%" alt="Palo Alto Firewall Factory Reset Steps"/>
 <br />
 <br />
-3<br/>
+Allow to boot to fresh environment and then implement new configurations<br/>
 <img src="https://i.imgur.com/cxzJ5Xr.png" height="80%" width="80%" alt="Palo Alto Firewall Factory Reset Steps"/>
 <br />
 <br />
